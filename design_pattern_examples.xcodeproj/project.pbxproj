@@ -11,6 +11,30 @@
 		C4AF2EC019CFEB7700F05617 /* design_pattern_examples.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C4AF2EBF19CFEB7700F05617 /* design_pattern_examples.1 */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		C4AF2EE619CFF02C00F05617 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4AF2EE219CFF02C00F05617 /* oop_example.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C4AF2ED619CFF02C00F05617;
+			remoteInfo = oop_example;
+		};
+		C4AF2F0119CFF84500F05617 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4AF2EFD19CFF84400F05617 /* dp_observer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C4AF2EF119CFF84400F05617;
+			remoteInfo = dp_observer;
+		};
+		C4AF2F1C19D0001F00F05617 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4AF2F1819D0001E00F05617 /* dp_singleton.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C4AF2F0C19D0001E00F05617;
+			remoteInfo = dp_singleton;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		C4AF2EB819CFEB7700F05617 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -28,6 +52,9 @@
 		C4AF2EBA19CFEB7700F05617 /* design_pattern_examples */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = design_pattern_examples; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4AF2EBD19CFEB7700F05617 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		C4AF2EBF19CFEB7700F05617 /* design_pattern_examples.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = design_pattern_examples.1; sourceTree = "<group>"; };
+		C4AF2EE219CFF02C00F05617 /* oop_example.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = oop_example.xcodeproj; path = oop_example/oop_example.xcodeproj; sourceTree = "<group>"; };
+		C4AF2EFD19CFF84400F05617 /* dp_observer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = dp_observer.xcodeproj; path = dp_observer/dp_observer.xcodeproj; sourceTree = "<group>"; };
+		C4AF2F1819D0001E00F05617 /* dp_singleton.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = dp_singleton.xcodeproj; path = dp_singleton/dp_singleton.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +71,9 @@
 		C4AF2EB119CFEB7700F05617 = {
 			isa = PBXGroup;
 			children = (
+				C4AF2F1819D0001E00F05617 /* dp_singleton.xcodeproj */,
+				C4AF2EFD19CFF84400F05617 /* dp_observer.xcodeproj */,
+				C4AF2EE219CFF02C00F05617 /* oop_example.xcodeproj */,
 				C4AF2EBC19CFEB7700F05617 /* design_pattern_examples */,
 				C4AF2EBB19CFEB7700F05617 /* Products */,
 			);
@@ -64,6 +94,30 @@
 				C4AF2EBF19CFEB7700F05617 /* design_pattern_examples.1 */,
 			);
 			path = design_pattern_examples;
+			sourceTree = "<group>";
+		};
+		C4AF2EE319CFF02C00F05617 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4AF2EE719CFF02C00F05617 /* oop_example */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4AF2EFE19CFF84400F05617 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4AF2F0219CFF84500F05617 /* dp_observer */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4AF2F1919D0001E00F05617 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4AF2F1D19D0001F00F05617 /* dp_singleton */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,12 +159,50 @@
 			mainGroup = C4AF2EB119CFEB7700F05617;
 			productRefGroup = C4AF2EBB19CFEB7700F05617 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C4AF2EFE19CFF84400F05617 /* Products */;
+					ProjectRef = C4AF2EFD19CFF84400F05617 /* dp_observer.xcodeproj */;
+				},
+				{
+					ProductGroup = C4AF2F1919D0001E00F05617 /* Products */;
+					ProjectRef = C4AF2F1819D0001E00F05617 /* dp_singleton.xcodeproj */;
+				},
+				{
+					ProductGroup = C4AF2EE319CFF02C00F05617 /* Products */;
+					ProjectRef = C4AF2EE219CFF02C00F05617 /* oop_example.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				C4AF2EB919CFEB7700F05617 /* design_pattern_examples */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C4AF2EE719CFF02C00F05617 /* oop_example */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = oop_example;
+			remoteRef = C4AF2EE619CFF02C00F05617 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C4AF2F0219CFF84500F05617 /* dp_observer */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dp_observer;
+			remoteRef = C4AF2F0119CFF84500F05617 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C4AF2F1D19D0001F00F05617 /* dp_singleton */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dp_singleton;
+			remoteRef = C4AF2F1C19D0001F00F05617 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C4AF2EB619CFEB7700F05617 /* Sources */ = {
@@ -227,6 +319,7 @@
 				C4AF2EC519CFEB7700F05617 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
