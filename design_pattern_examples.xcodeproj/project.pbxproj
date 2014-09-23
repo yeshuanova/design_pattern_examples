@@ -12,19 +12,33 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		C430882D19D11E86001084D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C430882919D11E86001084D0 /* dp_composite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C430881F19D11E86001084D0;
+			remoteInfo = dp_composite;
+		};
+		C430885319D141EF001084D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C430884F19D141EE001084D0 /* dp_state.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C430884519D141EE001084D0;
+			remoteInfo = dp_state;
+		};
+		C430886C19D152E1001084D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C430886819D152E0001084D0 /* dp_template_method.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C430885E19D152E0001084D0;
+			remoteInfo = dp_template_method;
+		};
 		C4AF2EE619CFF02C00F05617 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C4AF2EE219CFF02C00F05617 /* oop_example.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = C4AF2ED619CFF02C00F05617;
 			remoteInfo = oop_example;
-		};
-		C4AF2F0119CFF84500F05617 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C4AF2EFD19CFF84400F05617 /* dp_observer.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C4AF2EF119CFF84400F05617;
-			remoteInfo = dp_observer;
 		};
 		C4AF2F1C19D0001F00F05617 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -56,11 +70,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C430882919D11E86001084D0 /* dp_composite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = dp_composite.xcodeproj; path = dp_composite/dp_composite.xcodeproj; sourceTree = "<group>"; };
+		C430884F19D141EE001084D0 /* dp_state.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = dp_state.xcodeproj; path = dp_state/dp_state.xcodeproj; sourceTree = "<group>"; };
+		C430886819D152E0001084D0 /* dp_template_method.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = dp_template_method.xcodeproj; path = dp_template_method/dp_template_method.xcodeproj; sourceTree = "<group>"; };
 		C4AF2EBA19CFEB7700F05617 /* design_pattern_examples */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = design_pattern_examples; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4AF2EBD19CFEB7700F05617 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		C4AF2EBF19CFEB7700F05617 /* design_pattern_examples.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = design_pattern_examples.1; sourceTree = "<group>"; };
 		C4AF2EE219CFF02C00F05617 /* oop_example.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = oop_example.xcodeproj; path = oop_example/oop_example.xcodeproj; sourceTree = "<group>"; };
-		C4AF2EFD19CFF84400F05617 /* dp_observer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = dp_observer.xcodeproj; path = dp_observer/dp_observer.xcodeproj; sourceTree = "<group>"; };
 		C4AF2F1819D0001E00F05617 /* dp_singleton.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = dp_singleton.xcodeproj; path = dp_singleton/dp_singleton.xcodeproj; sourceTree = "<group>"; };
 		C4AF2F3C19D01B5600F05617 /* dp_factory_method.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = dp_factory_method.xcodeproj; path = dp_factory_method/dp_factory_method.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,12 +92,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C430882A19D11E86001084D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C430882E19D11E86001084D0 /* dp_composite */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C430885019D141EE001084D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C430885419D141EF001084D0 /* dp_state */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C430886919D152E0001084D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C430886D19D152E1001084D0 /* dp_template_method */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		C4AF2EB119CFEB7700F05617 = {
 			isa = PBXGroup;
 			children = (
+				C430886819D152E0001084D0 /* dp_template_method.xcodeproj */,
+				C430884F19D141EE001084D0 /* dp_state.xcodeproj */,
+				C430882919D11E86001084D0 /* dp_composite.xcodeproj */,
 				C4AF2F3C19D01B5600F05617 /* dp_factory_method.xcodeproj */,
 				C4AF2F1819D0001E00F05617 /* dp_singleton.xcodeproj */,
-				C4AF2EFD19CFF84400F05617 /* dp_observer.xcodeproj */,
 				C4AF2EE219CFF02C00F05617 /* oop_example.xcodeproj */,
 				C4AF2EBC19CFEB7700F05617 /* design_pattern_examples */,
 				C4AF2EBB19CFEB7700F05617 /* Products */,
@@ -109,14 +151,6 @@
 			isa = PBXGroup;
 			children = (
 				C4AF2EE719CFF02C00F05617 /* oop_example */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		C4AF2EFE19CFF84400F05617 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C4AF2F0219CFF84500F05617 /* dp_observer */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -178,16 +212,24 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = C430882A19D11E86001084D0 /* Products */;
+					ProjectRef = C430882919D11E86001084D0 /* dp_composite.xcodeproj */;
+				},
+				{
 					ProductGroup = C4AF2F3D19D01B5600F05617 /* Products */;
 					ProjectRef = C4AF2F3C19D01B5600F05617 /* dp_factory_method.xcodeproj */;
 				},
 				{
-					ProductGroup = C4AF2EFE19CFF84400F05617 /* Products */;
-					ProjectRef = C4AF2EFD19CFF84400F05617 /* dp_observer.xcodeproj */;
-				},
-				{
 					ProductGroup = C4AF2F1919D0001E00F05617 /* Products */;
 					ProjectRef = C4AF2F1819D0001E00F05617 /* dp_singleton.xcodeproj */;
+				},
+				{
+					ProductGroup = C430885019D141EE001084D0 /* Products */;
+					ProjectRef = C430884F19D141EE001084D0 /* dp_state.xcodeproj */;
+				},
+				{
+					ProductGroup = C430886919D152E0001084D0 /* Products */;
+					ProjectRef = C430886819D152E0001084D0 /* dp_template_method.xcodeproj */;
 				},
 				{
 					ProductGroup = C4AF2EE319CFF02C00F05617 /* Products */;
@@ -202,18 +244,32 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		C430882E19D11E86001084D0 /* dp_composite */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dp_composite;
+			remoteRef = C430882D19D11E86001084D0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C430885419D141EF001084D0 /* dp_state */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dp_state;
+			remoteRef = C430885319D141EF001084D0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C430886D19D152E1001084D0 /* dp_template_method */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dp_template_method;
+			remoteRef = C430886C19D152E1001084D0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		C4AF2EE719CFF02C00F05617 /* oop_example */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.executable";
 			path = oop_example;
 			remoteRef = C4AF2EE619CFF02C00F05617 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C4AF2F0219CFF84500F05617 /* dp_observer */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = dp_observer;
-			remoteRef = C4AF2F0119CFF84500F05617 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		C4AF2F1D19D0001F00F05617 /* dp_singleton */ = {
@@ -317,6 +373,7 @@
 		C4AF2EC419CFEB7700F05617 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -324,6 +381,7 @@
 		C4AF2EC519CFEB7700F05617 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
