@@ -35,20 +35,20 @@ public:
     }
     
 protected:
-    virtual BaseProduct* getProduct() = 0;
+    virtual std::shared_ptr<BaseProduct> getProduct() = 0;
 };
 
 class CreatorApple : public AbstractCreator {
 protected:
-    virtual BaseProduct* getProduct() {
-        return new ProductApple();
+    virtual std::shared_ptr<BaseProduct> getProduct() {
+        return std::make_shared<ProductApple>();
     }
 };
 
 class CreatorOrange : public AbstractCreator {
 protected:
-    virtual BaseProduct* getProduct() {
-        return new ProductOrange();
+    virtual std::shared_ptr<BaseProduct> getProduct() {
+        return std::make_shared<ProductOrange>();
     }
 };
 
@@ -60,16 +60,14 @@ public:
     }
     
 protected:
-    BaseProduct* getProdoct() {
-        return new create_type;
+    std::shared_ptr<BaseProduct> getProdoct() {
+        return std::make_shared<create_type>();
     }
     
 };
 
 int main(int argc, const char * argv[])
 {
-
-    // insert code here...
     std::cout << std::endl << "Run Point Creator:" << std::endl;
     CreatorApple apple;
     apple.doOperation();
@@ -79,6 +77,7 @@ int main(int argc, const char * argv[])
     std::cout << std::endl << "Run Template Creator:" << std::endl;
     CreatorTMP<ProductApple> tmp_apple;
     tmp_apple.doOperation();
+    
     CreatorTMP<ProductOrange> tmp_orange;
     tmp_orange.doOperation();
     

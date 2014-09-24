@@ -61,23 +61,17 @@ private:
     int _height;
 };
 
-void DisplayShapeDraw(std::shared_ptr<Shape> shape) {
-    shape->drawShape();
-}
-
 int main(int argc, const char * argv[])
 {
+    std::cout << "Polymorphism example\n";
     
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    std::shared_ptr<Shape> circle = std::make_shared<Circle>(5);
+    std::shared_ptr<Shape> rect = std::make_shared<Rect>(2, 3);
+    std::shared_ptr<Shape> triangle = std::make_shared<Triangle>(2, 3);
     
-    auto circle = std::make_shared<Circle>(5);
-    auto rect = std::make_shared<Rect>(2, 3);
-    auto triangle = std::make_shared<Triangle>(2, 3);
-    
-    DisplayShapeDraw(circle);
-    DisplayShapeDraw(rect);
-    DisplayShapeDraw(triangle);
+    circle->drawShape();
+    rect->drawShape();
+    triangle->drawShape();
     
     return 0;
 }

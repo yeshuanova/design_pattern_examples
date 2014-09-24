@@ -11,7 +11,7 @@
 
 class BaseTM {
 public:
-    void doProcess() {
+    void doTemplateMethod() {
         doPreProcess();
         doMainProcess();
         doPostProcess();
@@ -53,13 +53,13 @@ int main(int argc, const char * argv[]) {
     CustomMainProcess main_process;
     
     std::cout << "Run base process: " << std::endl;
-    base_process.doProcess();
+    base_process.doTemplateMethod();
     
     std::cout << std::endl << "Run custom pre-process:" << std::endl;
-    pre_process.doProcess();
+    pre_process.doTemplateMethod();
     
     std::cout << std::endl << "Run custom main-process:" << std::endl;
-    main_process.doProcess();
+    main_process.doTemplateMethod();
 
     return 0;
 }
