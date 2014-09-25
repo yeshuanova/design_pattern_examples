@@ -52,7 +52,7 @@ protected:
     }
 };
 
-template <typename create_type>
+template <class CreateType>
 class CreatorTMP {
 public:
     void doOperation() {
@@ -61,7 +61,7 @@ public:
     
 protected:
     std::shared_ptr<BaseProduct> getProdoct() {
-        return std::make_shared<create_type>();
+        return std::make_shared<CreateType>();
     }
     
 };

@@ -65,6 +65,10 @@ int main(int argc, const char * argv[])
 {
     std::cout << "Polymorphism example\n";
     
+    // C++03 form
+    // Shape *circle = new Circle(5);
+    // delete circle;
+    
     std::shared_ptr<Shape> circle = std::make_shared<Circle>(5);
     std::shared_ptr<Shape> rect = std::make_shared<Rect>(2, 3);
     std::shared_ptr<Shape> triangle = std::make_shared<Triangle>(2, 3);
