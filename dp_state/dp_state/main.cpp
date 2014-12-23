@@ -153,6 +153,8 @@ int main(int argc, const char * argv[]) {
     std::cout << "Run state pattern method" << std::endl;
     runActionState(dp_state);
     
+    auto str = "ffff";
+    std::cout << str << std::endl;
     return 0;
 }
 
